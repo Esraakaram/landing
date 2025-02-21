@@ -1,0 +1,360 @@
+@font-face {
+  font-family: "SourceSansPro-Bold";
+  src: url("./fonts/SourceSansPro-Bold.otf");
+}
+@font-face {
+  font-family: "SourceSansPro-Light";
+  src: url("fonts/SourceSansPro-Light.otf");
+}
+@font-face {
+  font-family: "SourceSansPro-ExtraLight";
+  src: url("fonts/SourceSansPro-ExtraLight.otf");
+}
+@font-face {
+  font-family: "SourceSansPro-Regular";
+  src: url("fonts/SourceSansPro-Regular.otf");
+}
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(24, 24, 24);
+  font-family: "SourceSansPro-Regular";
+}
+html {
+  color: white;
+  font-size: 10px;
+}
+.head {
+  width: 50%;
+  font-size: 3rem;
+  font-family: "SourceSansPro-Bold";
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(48, 48, 48);
+  text-transform: capitalize;
+  font-family: "SourceSansPro-Light";
+  padding: 2rem;
+  position: sticky;
+  top: 0%;
+  z-index: 2;
+}
+.ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: 2rem;
+  font-family: "SourceSansPro-Regular";
+  padding-right: 3rem;
+}
+
+ul li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.navbar_buttons > button {
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  border: white;
+  margin-right: 1rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+ 
+}
+.navbar_buttons{
+  flex-shrink: 0;
+}
+.navbar_links {
+  margin-right: 10rem;
+}
+.header {
+  background-image: url("images/discover-header.png");
+  background-repeat: no-repeat;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.countainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  text-transform: capitalize;
+  font-family: "SourceSansPro-Light";
+}
+.explarar {
+  display: flex;
+  flex-direction: row;
+
+  background-color: rgb(48, 48, 48);
+  width: 80%;
+  padding: 2rem;
+  border-radius: 2.5rem;
+  position: relative;
+  top: 85%;
+  align-items: center;
+}
+.br {
+  border-right: solid 0.1rem rgb(90 90 90 / 20%);
+  padding: 1.5rem;
+ 
+}
+.explarar > div {
+  margin-left: 1rem;
+  width: 20%;
+  font-size: 1.5rem;
+
+}
+
+.icongreater {
+  font-size: 3rem;
+  background: red;
+  padding: 2rem 3.5rem;
+  border-radius: 2.2rem;
+  width: 10% !important;
+}
+.explarar > div h4 {
+  padding-bottom: 1rem;
+  font-family: "SourceSansPro-ExtraLight";
+}
+.header h1 {
+  position: absolute;
+  top: 6rem;
+  font-family: "SourceSansPro-Bold";
+  font-size: 3rem;
+}
+.space{
+  flex-grow: 1;
+}
+
+.top_picks{
+  margin-top: 10rem;
+  padding: 2rem 2.5rem;
+  text-transform: capitalize;
+}
+.header_top_picks{
+  font-family:"SourceSansPro-Bold" ;
+ padding: 3.5rem;
+ font-size: 2rem;
+
+}
+.top_picks_contanier{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}
+.top_picks_card1{
+  background-image:linear-gradient(to right,rgb(0, 0,0, 0.3),rgb(0, 0,0, 0.3)), url(images/card-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top_picks_card2{
+  background-image: linear-gradient(to right,rgb(0, 0,0, 0.3),rgb(0, 0,0, 0.3)), url(images/card-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top_picks_card3{
+  background-image:linear-gradient(to right,rgb(0, 0,0, 0.3),rgb(0, 0,0, 0.3)), url(images/card-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top_picks_card4{
+  background-image: linear-gradient(to right,rgb(0, 0,0, 0.3),rgb(0, 0,0, 0.3)),url(images/card-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.top_picks_contanier>div{
+  width: 20%;
+  height: 30rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.top_picks_contanier>div::after{
+content: "";
+transform: translatex(-100%);
+background-color:rgb(0, 0,0, 0.6);
+width: 100%;
+height: 100%;
+display: inline-block;
+border-radius: 1rem;
+transition:1s;
+
+
+}
+.top_picks_contanier>div:hover::after{
+  transform: translatex(0%);
+}
+
+.top_picks_card_contant{
+  position: absolute;
+    bottom: 2rem;
+    padding-left: 2rem;
+    z-index: 1;
+}
+.top__picks__card_header{
+  font-family: "SourceSansPro-Bold";
+  font-size: 2rem;
+}
+.top__picks__card_text{
+   font-family: "SourceSansPro-Bold";
+   font-size: 1.5rem;
+}
+.payment_section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    padding: 3.5rem;
+    text-transform: capitalize;
+}
+.payment_section>div{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+
+}
+
+.payment_section_img{
+  width: 6rem;
+  padding-bottom: 1rem;
+}
+
+.payment_section_img_header{
+  padding-bottom: 1rem
+}
+ .payment_section1 .payment_section_img_contant{
+  text-align: center;
+ }
+ .offer{
+  background-image: url(images/nature.png);
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+  margin: 3.5rem;
+  font-size: 1.5rem
+ }
+ .offer_contant>h3{
+
+  font-family:"SourceSansPro-Bold" ;
+  font-size: 1.5rem;
+  padding: 3rem 0rem;
+ }
+.offer_button>button{
+  border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 25.6rem;
+    border-style: none;
+    text-transform: capitalize;
+    position: absolute;
+    top: 6rem;
+    font-family: "SourceSansPro-Regular";
+}
+.offer_button{
+  position: relative;
+}
+.footer{
+  background-color:rgb(48, 48, 48);
+  display: flex;
+  flex-direction: row;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  height: auto;
+}
+.footer>div{
+  width: 50%;
+}
+.footer h4{
+  font-family:"SourceSansPro-Regular" ;
+ 
+  padding: 30px 0px 10px 35px;
+  color: rgb(211, 211, 211);
+}
+.footer p{
+  color: rgb(109, 106, 106);
+ padding-left: 30px;
+ padding-bottom: 30px;
+}
+.support{
+  display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-right: 40px;
+}
+.support ul li{
+  color:rgb(109, 106, 106) ;
+}
+
+/* responsiveee */
+/* for moblie  */
+
+
+@media screen and (max-width: 1800px){
+   
+}
+
+
+@media screen and (max-width: 1200px){
+  .top_picks_contanier>div{
+      flex-basis: 45%;   
+      margin-bottom: 3rem;
+      
+  }
+}
+
+
+@media screen and (max-width: 900px){
+  html{
+      font-size: 6px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html{
+    font-size: 4px;
+}
+.header{
+    height: 30vh;
+}
+.offer{
+  height: 20vh;
+}
+.top_picks_contanier>div{
+  flex-basis: 100%;   
+  margin-bottom: 6rem;
+}
+
+.footer{height: auto;}
+.footer p {
+ 
+  padding-bottom: 15px;
+}
+
+}
+
+
